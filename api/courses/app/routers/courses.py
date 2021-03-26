@@ -12,7 +12,7 @@ router = APIRouter()
 async def list_courses():
     # response = dictionary_table.query(KeyConditionExpression=Key("pk").eq("country"))
     # items_raw = response["Items"]
-    items = [{"id": "123", "name": "Kubernetes course"}]
+    items = [{"id": "1234", "name": "Kubernetes course"}]
 
     # for item in items_raw:
     #     items.append(
