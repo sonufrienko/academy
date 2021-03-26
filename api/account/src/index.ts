@@ -8,11 +8,7 @@ import { notFoundHandler } from './middleware/notFound';
 
 dotenv.config();
 
-if (!process.env.PORT) {
-  process.exit(1);
-}
-
-const PORT: number = Number(process.env.PORT as string);
+const PORT: number = Number(process.env.PORT || '3000');
 
 const app = express();
 app.disable('x-powered-by');
