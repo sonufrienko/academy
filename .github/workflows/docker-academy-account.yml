@@ -21,7 +21,7 @@ jobs:
       - name: Build
         run: |
           cd api/account/
-          docker build . -t sonufrienko/academy-account:$(date +%s)
+          docker build . -t ${{ secrets.DOCKERHUB_USERNAME }}/academy-account:latest
       - name: Push
         run: |
-          docker push sonufrienko/academy-account:$(date +%s)
+          docker push ${{ secrets.DOCKERHUB_USERNAME }}/academy-account:latest
