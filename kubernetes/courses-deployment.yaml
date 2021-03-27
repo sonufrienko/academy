@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: courses-deployment
+  labels:
+    app: courses
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: courses
+  template:
+    metadata:
+      labels:
+        app: courses
+    spec:
+      containers:
+        - name: courses
+          image: sonufrienko/academy-courses:latest
+          resources:
+            requests:
+              cpu: 500m
+              memory: 300Mi
+          ports:
+            - containerPort: 80
+          env:
+            - name: VAR_1
+              value: test
