@@ -10,7 +10,7 @@ Built with:
 - Kubernetes (1.18)
 - NodeJS (v14)
   - Express
-- Python (3.7)
+- Python (3.8)
   - FastAPI
 
 ### Application Structure
