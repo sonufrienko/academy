@@ -32,7 +32,7 @@ Built with:
 
 ## Getting Started
 
-## Deploy to AWS EKS
+## :rocket: Deploy to AWS EKS
 
 1. Setup AWS EKS with [eksctl](https://github.com/weaveworks/eksctl)
 
