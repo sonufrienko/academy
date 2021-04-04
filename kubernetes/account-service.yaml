@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: account
-  name: account-deployment
+  name: account-service
 spec:
   ports:
   - port: 80

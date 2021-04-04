@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: courses
-  name: courses-deployment
+  name: courses-service
 spec:
   ports:
   - port: 80
