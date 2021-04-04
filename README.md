@@ -12,6 +12,8 @@ Built with:
   - Express
 - Python (3.8)
   - FastAPI
+- Go (1.16)
+  - Fiber
 
 ### Application Structure
 
@@ -19,6 +21,7 @@ Built with:
 .
 ├── api               # All our microservices
 │   ├── account       # Account microservice with NodeJS
+│   ├── comments      # Comments microservice with Go
 │   └── courses       # Courses microservice with Python
 ├── kubernetes
 ├── web
