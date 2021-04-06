@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: account-deployment
+  name: comments
   labels:
-    app: account
+    app: comments
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: account
+      app: comments
   template:
     metadata:
       labels:
-        app: account
+        app: comments
     spec:
       containers:
-        - name: account
-          image: sonufrienko/academy-account:latest
+        - name: comments
+          image: sonufrienko/academy-comments:latest
           resources:
             requests:
               cpu: 500m
-              memory: 200Mi
+              memory: 300Mi
           ports:
             - containerPort: 3000
           env:

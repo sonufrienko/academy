@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: courses-deployment
+  name: courses
   labels:
     app: courses
 spec:
