@@ -6,9 +6,10 @@ import (
 )
 
 func GetComments(c *fiber.Ctx) error {
-	courseId := c.Query("courseId")
+	query := new(comments.CommentsQuery)
+	c.QueryParser(query)
 
-	comments, err := comments.GetComments(courseId)
+	comments, err := comments.GetComments(query)
 	if err != nil {
 		return err
 	}
@@ -23,7 +24,7 @@ func AddComments(c *fiber.Ctx) error {
 		return err
 	}
 
-	comment, err := comments.AddComment(*data)
+	comment, err := comments.AddComment(data)
 	if err != nil {
 		return err
 	}
